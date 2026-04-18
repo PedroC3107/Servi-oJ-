@@ -1,0 +1,123 @@
+You are a senior full-stack engineer and product architect.
+
+Your task is to build a complete MVP SaaS web application called "ServicoJa".
+
+🎯 PRODUCT GOAL
+
+ServicoJa is a SaaS platform for service providers (electricians, cleaners, freelancers, etc.) to:
+
+Get more clients
+Organize their daily jobs
+Track earnings simply
+
+The app MUST be extremely simple, fast, and mobile-first.
+
+🧱 TECH STACK (MANDATORY)
+Frontend: React (with Vite)
+Backend: Node.js with Express
+Database: SQLite (for MVP simplicity)
+Styling: TailwindCSS
+Authentication: JWT-based login system
+🎨 DESIGN SYSTEM (STRICT)
+
+Use the following color palette:
+
+Primary Green: #22C55E
+Dark Green: #15803D
+Black (text): #1F2937
+White (background): #FFFFFF
+Accent Yellow: #FACC15
+
+Design must be:
+
+Minimal
+Clean
+Large buttons (mobile friendly)
+Focused on usability, not aesthetics
+👤 USER FLOW
+1. Authentication
+Register (name, service type, phone, password)
+Login
+JWT session
+2. DASHBOARD (HOME)
+
+Display:
+
+Today's jobs
+Total earned today
+Button: "+ Add Service"
+3. SERVICES (CORE FEATURE)
+
+User can:
+
+Create a service:
+Client name
+Phone
+Date & time
+Service type
+Price
+Mark as completed
+View list of upcoming jobs
+4. CLIENTS (MINI CRM)
+List of clients
+Each client shows:
+Name
+Phone
+Past services
+Button: "Message on WhatsApp" (use wa.me link)
+5. EARNINGS
+Show:
+Today
+This week
+This month
+📊 DATABASE STRUCTURE
+Users
+id
+name
+serviceType
+phone
+passwordHash
+Services
+id
+userId
+clientName
+clientPhone
+date
+price
+completed (boolean)
+Clients
+id
+userId
+name
+phone
+⚙️ BACKEND FEATURES
+REST API with routes:
+/auth/register
+/auth/login
+/services
+/clients
+JWT authentication middleware
+CRUD operations for services and clients
+💡 FRONTEND PAGES
+Login/Register page
+Dashboard
+Services page
+Clients page
+Earnings page
+📱 MOBILE FIRST
+
+All UI must:
+
+Work perfectly on mobile
+Have large tap areas
+Simple navigation (bottom menu preferred)
+🔔 EXTRA (IF POSSIBLE)
+Simple notification (e.g. upcoming job alert)
+Clean UI feedback (loading, success messages)
+🚀 FINAL REQUIREMENTS
+Fully runnable project
+Clear folder structure
+Comments explaining main parts
+Dummy data for testing
+
+Build the entire project step-by-step and ensure everything runs correctly.
